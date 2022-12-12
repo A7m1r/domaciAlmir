@@ -2,11 +2,11 @@
 
 describe ("Registration test",() => {
     it ('Registration',()=> {
-        cy.visit ("https://gallery-app.vivifyideas.com/")
+        cy.visit ("/")
         cy.get(':nth-child(2) > .nav-link').click ()
         cy.get('#first-name').type ("Almir")
         cy.get('#last-name').type ("Tester")
-        cy.get('#email').type("almirtester@mail.com");
+        cy.get('#email').type("almirtester1234@mail.com");
         cy.get('#password').type ("Almir1234")
         cy.get('#password-confirmation').type ("Almir1234")
         cy.get('.form-check-input').click()
